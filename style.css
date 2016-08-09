@@ -1,0 +1,1024 @@
+/*
+Theme Name: KBase
+Theme URI: http://www.kbase.us/wp-theme
+Author: KBase Web Team (Erik Pearson)
+Author URI: http://www.kbase.us/people/erik_pearson
+Description: The KBase theme is responsive and pragmatic.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: kbase, responsive, dynamic, documentation, tutorials, faq
+Text Domain: kbase
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/*
+http://getbootstrap.com/customize/?id=5c9a6269166b3680b58b
+*/
+
+/* Sticky Footer */
+
+
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.sticky-body {
+	min-height: 100%;
+	height: auto !important; 
+	height: 100%;
+	margin-bottom: -80px;
+}
+.sticky-footer, .sticky-push {
+	height: 80px;
+}  
+.sticky-push {
+  margin-top: 1em;
+}
+
+.sticky-footer {
+  position: relative;
+}
+.footer {
+    background-color: #e6e6e6;
+    border-top: 2px solid #999;
+    padding: 20px 0;
+    position: absolute; bottom: 0;
+    width: 100%;
+}
+
+
+/* Kbase Styles */
+
+
+.xbtn-group .xbtn {
+  margin-right: 12px;
+}
+
+.kbase-menu {
+   xbackground-color: #000;
+}
+
+
+
+.kbase-footer {
+  background-color: #e6e6e6;
+  border-top: 2px #999 solid;
+  xpadding: 1em 0;
+  xbackground-color: #e6e6e6;
+  xborder-top: 2px solid #999;
+  xpadding: 20px 0;
+  xposition: absolute; bottom: 0;
+  xwidth: 100%;
+}
+.kbase-footer > .row {
+  margin-top: 12px;
+}
+
+.kbase-theme .well {
+  padding: 1em;
+  margin: 0.5em 0;
+}
+.kbase-theme .well h2 {
+  margin: 0em 0 0em 0;
+  font-size: 120%;
+  font-weight: bold;
+}
+.kbase-theme .well h3 {
+  margin: 0.5em 0 0em 0;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+
+
+.well ul {
+  list-style-position: inside;
+  padding: 10px;
+  list-style-image: none;
+}
+
+.kbase-footer ul {
+  line-height: 1.3em;
+  padding-left: 1.3em;
+  margin: 0 0 0.5em 0;
+}
+.kbase-footer ul li {
+  margin-bottom: 0.4em;
+  list-style-type: none;
+}
+
+
+/* Data source tables */
+
+table.data-table {
+  border-collapse: collapse;
+}
+table.data-table tr:nth-child(1) th  {
+  padding: 0 0 1em 0;
+}
+table.data-table tr {
+}
+
+table.data-table td, table.data-table th {
+  vertical-align: top;
+  padding: 0.5em 0.2em 0.5em 0.2em;
+  text-align: left;
+
+}
+table.datasources tr.spacer {
+  height: 1em;
+}
+table.datasources tr.spacer td {
+  border-style: none;
+}
+table.data-table tr {
+  padding-top: 1em;
+}
+
+table.data-table tr.section {
+  padding-top: 2em;
+}
+table.data-table tr.section td {
+  font-weight: bold;
+  font-size: 110%;
+  xpadding-top: 1em;
+  background-color: #E0E0E0;
+  border-bottom: 1px #9D9E9D solid;
+}
+table.data-table tr.source td {
+  border-bottom: 1px #E0E0E0 solid;
+}
+table.data-table tr td {
+  border-bottom: 1px #E0E0E0 solid;
+}
+
+
+
+table.presentation {
+  width: normal;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+table.presentation.full {
+  width: 100%;
+}
+table.presentation tr {
+ row-height: 1.3em;
+}
+table.presentation  tr th {
+  background-color: #eeeeee;
+  color: #000000;
+  padding: 0.4em;
+  font-weight: bold;
+  border:1px #dddddd solid;
+}
+table.presentation tr td {
+ border:1px #dddddd solid;
+  padding: 0.4em;
+}
+table.presentation.striped tr:nth-child(even) {
+  background-color: #F7F7F7;
+}
+table.presentation .number {
+  text-align: right;
+  padding-right: 0.5em;
+}
+
+table.bare {
+  width: normal;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 0;
+}
+table.bare tr {
+  row-height: 1.3em;
+}
+table.bare tr th {
+  background-color: #999999;
+  color: #FFFFFF;
+  padding: 0.4em;
+  border-style: none;
+}
+table.bare tr td {
+  border-style: none;
+  padding: 0.3em;
+}
+
+
+
+/* "presentation" (just a nice data presentation table) styles */
+.presentation tr.spacer-row {
+  line-height: 0.7em;
+  height: 0.7em;
+}
+.presentation tr.spacer-row td {  
+  margin: 0; padding: 0; line-height: 0;
+}
+.presentation.data-types tr.spacer-row td {
+  background-color: #FFFFFF;
+}
+.presentation.data-types2 {
+  width: 100%;
+}
+.presentation.data-types2 > tbody > tr > td {
+  padding: 0; 
+}
+.presentation.data-types2 table {
+  border-collapse: collapse;
+  margin: 0;
+  border-style: none;
+}
+.presentation.data-type-section tr th:nth-child(1),
+.presentation.data-type-section tr td:nth-child(1) {
+  width: 75%;
+}
+
+.presentation.data-type-section tr:last-child th,
+.presentation.data-type-section tr:last-child td  {
+  border-bottom: 0px;
+}
+.presentation.data-type-section tr:nth-child(1) th,
+.presentation.data-type-section tr:nth-child(1) td  {
+  border-top: 0px;
+}
+.presentation.data-type-section th:first-child,
+.presentation.data-type-section td:first-child {
+  border-left: 0px;
+} 
+.presentation.data-type-section th:last-child,
+.presentation.data-type-section td:last-child {
+  border-right: 0px;
+} 
+
+table.presentation  tr.odd > td {
+  background-color: #FFFFFF;
+}
+table.presentation  tr.even > td {
+  background-color: #F7F7F7;
+}
+
+/* Screen grab */
+
+
+/* Framing a screengrab image and caption within documentation in a left or right column...*/
+
+.screengrab {
+  display: inline-block;
+  margin: 1em 10px 1.2em 0px;
+  border: 1px silver solid;
+  box-shadow: 0 0 1em gray;
+  padding: 10px;
+	box-sizing: content-box;
+	background-color: #FFF;
+}
+.screengrab img {
+  width: 100%;
+}
+.caption {
+ margin: 0.5em 3em 1em 3em;
+}
+
+/* FAQ */
+
+/* FAQ styling */
+.faq .item {
+  margin: 1em 0 0 0;
+  border-bottom: 1px silver solid;
+  padding: 0.3em;
+}
+.faq .question {
+  font-weight: bold;
+  font-size: 120%;
+  margin-bottom: 0.4em;
+}
+.faq .answer {
+  margin-left: 1em;
+}
+ /* old */
+
+.faq>a{font-size:1.5em; font-weight:bold;}
+.faq a:hover{cursor:pointer;cursor:hand;}
+.faq-answer{display:none;}
+
+
+/* Bootstrap tweaks */
+
+/* Headers */
+
+/* They are pretty big, so soften their impact with some lower contrast */
+h1, h2, h3, h4, h5, th {
+  color: #6b844b;
+}
+h2 {
+  padding-bottom:4px;
+  border-bottom: 2px rgba(107, 132,75, 0.4) solid;
+}
+h4 {
+  font-style: italic;
+}
+
+/* tables */
+.table.table-kbase-data tbody tr:nth-child(1) td {
+  xbackground-color: silver;
+  padding-top: 20px;
+  font-weight: bold;
+  color: #4F4F4F;
+}
+
+
+.kbase-theme .dropdown-header {
+  xcolor: #FFF; 
+  font-weight: bold;
+  padding-top: 12px;
+  xbackground-color: #DBDBDB;
+  xcolor: #757575;
+  xborder-bottom: 1px #757575 solid;
+  color: #6b844b;
+  text-transform: uppercase;
+}
+.kbase-theme .dropdown-header:nth-child(n+2) {
+  margin-top: 12px;
+}
+
+.btn-kbase-home {
+  padding: 20px 0 20px 15px;
+  vertical-align: middle;
+  text-align: left;
+  line-height: 25px;
+  margin: 0 0 20px 0;
+}
+.btn-kbase-home .glyphicon {
+  xposition: absolute;
+  xfloat: left;
+  xmargin-left: -20px;
+  xleft: 0;
+  font-size: 25px;
+  margin-right: 6px;
+}
+.btn-kbase-home .glyphicon {
+  
+}
+.icon-large-left {
+  xfont-size: 200%;
+  
+}
+
+/* See: http://charliepark.org/bootstrap_buttons/ */
+.btn-kbase-home.btn-new-to-kbase {
+  margin-top: 10px;
+  
+  background-color: hsl(38, 100%, 37%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffaa19", endColorstr="#bc7700");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffaa19), to(#bc7700));
+  background-image: -moz-linear-gradient(top, #ffaa19, #bc7700);
+  background-image: -ms-linear-gradient(top, #ffaa19, #bc7700);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffaa19), color-stop(100%, #bc7700));
+  background-image: -webkit-linear-gradient(top, #ffaa19, #bc7700);
+  background-image: -o-linear-gradient(top, #ffaa19, #bc7700);
+  background-image: linear-gradient(#ffaa19, #bc7700);
+  border-color: #bc7700 #bc7700 hsl(38, 100%, 32.5%);
+  color: #fff !important;
+  xtext-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn-kbase-home.btn-search-reference-data {
+  background-color: hsl(87, 35%, 39%) !important;
+   background-repeat: repeat-x;
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#95b76a", endColorstr="#668640");
+   background-image: -khtml-gradient(linear, left top, left bottom, from(#95b76a), to(#668640));
+   background-image: -moz-linear-gradient(top, #95b76a, #668640);
+   background-image: -ms-linear-gradient(top, #95b76a, #668640);
+   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #95b76a), color-stop(100%, #668640));
+   background-image: -webkit-linear-gradient(top, #95b76a, #668640);
+   background-image: -o-linear-gradient(top, #95b76a, #668640);
+   background-image: linear-gradient(#95b76a, #668640);
+   border-color: #668640 #668640 hsl(87, 35%, 34.5%);
+   color: #fff !important;
+   xtext-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
+   -webkit-font-smoothing: antialiased;
+}
+
+.btn-kbase-home.btn-sign-in {
+  background-color: hsl(213, 35%, 39%) !important;
+   background-repeat: repeat-x;
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6a8db7", endColorstr="#405f86");
+   background-image: -khtml-gradient(linear, left top, left bottom, from(#6a8db7), to(#405f86));
+   background-image: -moz-linear-gradient(top, #6a8db7, #405f86);
+   background-image: -ms-linear-gradient(top, #6a8db7, #405f86);
+   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6a8db7), color-stop(100%, #405f86));
+   background-image: -webkit-linear-gradient(top, #6a8db7, #405f86);
+   background-image: -o-linear-gradient(top, #6a8db7, #405f86);
+   background-image: linear-gradient(#6a8db7, #405f86);
+   border-color: #405f86 #405f86 hsl(213, 35%, 34.5%);
+   color: #fff !important;
+   xtext-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
+   -webkit-font-smoothing: antialiased;
+}
+
+.kbase-home-page-carousel {
+  xheight: 400px;
+  width: 680px;
+}
+.kbase-home-page-carousel .panel {
+  xheight: 370px;
+  position: relative;
+}
+.kbase-home-page-carousel .panel-heading {
+  color: #6b844b;
+  font-weight: bold;
+  font-size: 120%;
+  text-align: center;
+}
+.kbase-home-page-carousel .panel-body {
+  padding: 0;
+  width: 680px;
+  height: 340px;
+}
+.kbase-home-page-carousel .panel-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  border: none;
+  padding-bottom: 1.2em;
+}
+.kbase-theme.template-home .panel {
+  font-size: 150%;
+}
+.kbase-home-page-carousel .panel.panel-default {
+  border: 0;
+  margin: 0;
+}
+.kbase-home-page-carousel .panel.panel-default .panel-body {
+  border: 0;
+}
+.kbase-theme .carousel {
+  border: 1px #DDD solid;
+}
+.kbase-home-page-carousel .carousel-indicators {
+  margin-bottom: 0;
+  bottom: 0;
+}
+.kbase-home-page-carousel .carousel-indicators li {
+  border-color: #000;
+  background-color: silver;
+}
+.kbase-home-page-carousel .carousel-indicators li.active {
+  border-color: #000;
+  background-color: #D9EDF7;
+}
+
+.social-button {
+  margin-top: 0.3em;
+}
+.valign-mid {
+ display: inline-block; 
+ vertical-align: middle;
+}
+
+
+
+.kbase-main-nav {
+  xposition: relative;
+
+}
+.kbase-theme .navbar.kbase-main-navbar {
+  xmargin-top: 20px;
+}
+.kbase-main-nav .navbar-btns {
+  margin-top: 6px;
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.kbase-main-nav .navbar-nav {
+ margin-top: 8px;
+ margin-left: 40px;
+}
+
+.kbase-theme .navbar.navbar-default {
+  margin-top: 0px;
+  border: none;
+  border-radius: none;
+ 
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  xbackground: none;
+  xxbackground-color: #FFF;
+  border-bottom: 1px #DDD solid;
+}
+.kbase-theme .navbar-default {
+    box-shadow: none;
+    border-radius: none;
+    margin: 0;
+    padding: 0;
+}
+.kbase-main-nav .navbar-form { 
+  margin-top: 14px;
+  
+}
+.kbase-main-nav .navbar-form input {
+  width: 200px;
+}
+
+.content {
+  xmin-width: 400px;
+  max-width: 480px;
+}
+
+.the-content {
+  margin: 0 auto;
+}
+
+
+@media only screen and (min-width: 960px) {
+  .the-content {
+    width: 480px;
+  }
+}
+@media only screen and (max-width: 959px) {
+  .the-content {
+    width: 100%;
+  }
+}
+
+
+.the-document {
+  margin: 0 auto;
+  
+}
+@media only screen and (min-width: 960px) {
+  .the-documnet {
+    width: 960px;
+  }
+}
+@media only screen and (max-width: 959px) {
+  .the-documnet {
+    width: 100%;
+  }
+}
+
+.circled {
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  margin-right: 8px;
+  border-radius: 15px;
+  border: 1px black solid;
+  xdisplay: inline-block;
+  float:left;
+  text-align: center;
+  vertical-align: middle;
+  color: #FFF;
+  background-color: gray;
+}
+
+/* Bootstrap callout style, not really part of bootstrap but in the docs. People have extracted them... */
+/* Base styles (regardless of theme) */
+.bs-callout {
+margin: 20px 0;
+padding: 15px 30px 15px 15px;
+border-left: 5px solid #eee;
+}
+ 
+.bs-callout h4 {
+margin-top: 0;
+}
+ 
+.bs-callout p:last-child {
+margin-bottom: 0;
+}
+ 
+.bs-callout code,
+.bs-callout .highlight {
+background-color: #fff;
+}
+ 
+/* Themes for different contexts */
+.bs-callout-danger {
+background-color: #fcf2f2;
+border-color: #dFb5b4;
+}
+ 
+.bs-callout-warning {
+background-color: #fefbed;
+border-color: #f1e7bc;
+}
+ 
+.bs-callout-info {
+background-color: #f0f7fd;
+border-color: #d0e3f0;
+}
+ 
+.bs-callout-danger h4,
+.bs-callout-danger a.alert-link {
+color: #B94A48;
+}
+ 
+.bs-callout-warning h4,
+.bs-callout-warning a.alert-link {
+color: #C09853;
+}
+ 
+.bs-callout-info h4,
+.bs-callout-info a.alert-link {
+color: #3A87AD;
+}
+ 
+.bs-callout a.alert-link {
+font-weight: bold;
+}
+
+/* Wordpress REQUIRED styles -- i.e. generated by the wordpress editor */
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+.icon-blue {
+  color: blue;
+  font-weight: bold;
+}
+
+
+/* kbase events */
+.events {
+  
+}
+.events .event-item {
+  margin-bottom: 1em;
+} 
+.events .event-title {
+  font-weight: bold;
+}
+.events .event-date {
+  font-style: italic;
+  
+  color: gray;
+}
+.events .event-location {
+  font-style: italic;
+}
+
+/* Better typography overrides for bootstrap */
+
+
+h1 {
+  margin: 0 0 20px 0;
+}
+h2:nth-child(1), 
+h3:nth-child(1), 
+h4:nth-child(1), 
+h5:nth-child(1) {
+  margin: 0 0 6px 0;
+}
+h2, h3, h4, h5, h5 {
+  margin: 16px 0 6px 0;
+}
+p {
+  text-indent: 0em;
+  margin: 1em 0 0 0;
+}
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p {
+  text-indent: 0;
+  margin-top: 0;
+}
+
+h1 + ul, h2 + ul, h3 + ul, h4 + ul, h5 + ul {
+    text-indent: 0;
+    margin-top: 0;
+    
+}
+p:nth-of-type(1) {
+  text-indent: 0;
+  margin-top: 0;
+}
+.post-date {
+  font-style: italic;
+  margin-bottom: 6px;
+}
+.post-date + p {
+  text-indent: 0;
+  margin-top: 0;
+}
+
+
+/* ivycat posts */
+
+.kbase-theme .ivycat-post {
+  margin-bottom: 12px;
+}
+
+/* wp forms 7 */
+.wpcf7 p {
+  text-indent: 0;
+}
+
+/* carousel tweaks */
+
+.kbase-theme .carousel-control {
+   top: 40%;
+   width: 10%;
+   xpadding: 0; margin: 0;
+   xbackground-size: cover;
+   xbackground: transparent;
+   xbackground-clip: padding-box;
+   x-webkit-background-clip: padding-box;
+   xborder: 0;
+   xbackground-color: rgba(0,0,0,0);
+   background: none;
+   
+   xborder: 1px white solid;
+   border-radius: 100%;
+
+   height: 0; 
+   padding-bottom: 10%;
+}
+
+/* Guide pages */
+.guide-step {
+  padding: 8px;
+  margin: 16px 0 10px 0;
+  background-color: silver;
+  border-radius: 4px;
+}
+.kb-guide-action {
+  padding: 8px;
+  margin: 16px 0 10px 0;
+  background-color: rgba(244,210,0,0.3);
+  border: 2px rgba(255,142,25,0.3) solid;
+  border-radius: 4px;
+}
+.kb-guide-action .glyphicon {
+  margin-right: 6px;
+  color: rgba(67, 123, 194, 1);
+}
+.template-documentation h4 {
+  margin: 12px 0 8px 0;
+}
+
+.kbase-documentation-menu {
+  
+}
+.kbase-documentation-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.kbase-documentation-menu ul li {
+  
+}
+
+.kbase-footer-menu {
+  display: inline-block;
+}
+.kbase-footer-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: inline-block;
+}
+.kbase-footer-menu ul li {
+
+  display: inline-block;
+}
+
+/* Nicer lists */
+.kbase-theme ul.list {
+  margin: 0;
+  padding: 0;
+  margin: 0 0 0 1em;
+}
+.kbase-theme ul.list li {
+  margin: 0 0 0.5em 0;
+}
+
+/* Collapsibles */
+.collapsibles {
+  margin: 12px 0 12px 0;
+  font-size: 100%;
+}
+.collaspibles h4 {
+  font-size: 100%;
+}
+
+/* Huh? Can't get images to necessarily center in the home page slideshows --- maybe it is the bootstrappy stuff, try this */
+
+.kb-center-it {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Icon grid in narrative guid */
+.kb-icongrid td {
+  padding: 10px;
+}
+.kb-icongrid td:nth-child(2) {
+  padding-right: 20px;
+}
+
+/* Lists that can serve as legends in documentation: */
+
+ol.legend {
+  list-style: upper-latin;
+} 
+ol.legend li {
+  
+}
+ol.legend li::marker {
+  color: red;
+}
+
+.red {
+  color: red;
+}
+.legend {
+  border: 1px silver solid;
+  border-radius: 6px;
+  padding: 4px;
+  margin: 8px 0;
+}
+.legend .-item {
+  display: inline-block;
+  font-size: 0;
+}
+.legend .-item .-marker {
+  display: inline-block;
+  width: 5%;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.legend .-item .-content {
+  display: inline-block;
+  width: 95%;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+/* search customization */
+.search article {
+  margin-top: 16px;
+}
+.search .post-type {
+  font-style: italic;
+  color: gray;
+}
+.search article h2 {
+  font-size: 120%;
+  border: none;
+  margin: 6px 0 0 0;
+  padding: 0;
+}
+
+/* A section heading that is out of the flow of the H tags */
+.section-heading {
+  margin-top: 16px;
+  border-radius: 6px;
+  padding: 6px;
+  border: none;
+  background-color: gray;
+  color: silver;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* new to kbase styles */
+
+.thumbnail1 {
+    border: 2px ridge #90c8f7;
+    border-radius: 7px;
+    display: inline-block;
+    margin: 1em 10px 1.2em 0;
+    padding: 5px;
+    width: 100px;
+}
+
+.thumbnail2 {
+    border: 1px solid #90c8f7;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 1em 10px 1.2em 0;
+    padding: 5px;
+    width: 100px;
+}
+
+.thumbnail3 {
+    border: 2px solid #1fa247;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 1em 10px 1.2em 0;
+    padding: 5px;
+    width: 100px;
+}
+
+/* Footer */
+.kbase-footer-menu .menu-item {
+  vertical-align: middle;
+  line-height: 42px;
+  margin: 0;
+}
+.footer-bar { 
+  text-align: center;
+  vertical-align: middle;
+  line-height: 42px;
+}
+.footer-sep {
+  position: relative;
+  top: -2px;
+  
+}
+.footer-sep::before {
+  content: "▰";
+  color: silver;
+  
+  font-size: 80%;
+}
+
+
+/* Accordion tweaks */
+
+/* Copied from the glyphicon styles */
+
+.xapps-list [data-toggle="collapse"]::before {
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90%;
+  width: 12px;
+  color: silver;
+  line-height: 1;
+  vertical-align: baseline;
+  content: "\e114 ";
+}
+.xapps-list [data-toggle="collapse"].collapsed::before {
+  content: "\e080 ";
+}
+/* TODO: this needs to be calculated with some sort of rationale ... */
+.xapps-list .panel-subtitle {
+  margin-left: 22px;
+}
+
+
+/* WP Glossary Tooltip */
+
+/* The Tooltip */
+.kbase-theme  .wp-glossary.wpg-tooltip {
+    border: 1px rgba(243, 209, 49, 1) dashed;
+    padding: 0 4px;
+}
+.kbase-theme  .wp-glossary.wpg-tooltip:hover {
+    border: 1px rgba(222, 142, 47, 1) dashed;
+    padding: 0 4px;
+}
+
+.kbase-theme .wpg-term-usage {
+    
+}
+.kbase-theme ul.wpg-term-usage {
+    padding: 0;
+    margin: 0;
+}
+.kbase-theme ul.wpg-term-usage li {
+    list-style-type: none;
+}
+
+/*! Cream tooltip style */
+.kbase-theme .qtip-custom {
+    /* This is the orange background color from the logo */
+	background-color: rgba(243, 209, 49, 1);
+    /* This is the orange bkg from logo, but saturation down to 40 http://www.rgbtool.com */
+    background-color: rgba(242, 224, 145, 1);
+    /* this is the darker orange from the logo */
+	border-color: rgba(222, 142, 47, 1);
+	xcolor: #A27D35;
+    color: #000;
+    line-height: 1.4;
+    font-size: 90%;
+}
+
+.kbase-theme 	.qtip-custom .qtip-titlebar {
+		background-color:rgba(222, 142, 47, 1);
+        color: white;
+        font-size: 90%;
+	}
+
+	.qtip-custom .qtip-close .qtip-icon{
+		background-position: -82px 0;
+	}
+
+

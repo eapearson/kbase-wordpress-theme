@@ -1,0 +1,82 @@
+
+.tile {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #EEEEEE;
+  border-radius: 4px;
+  vertical-align: middle;
+  min-height: 200px;
+  border: 2px silver solid;
+
+  text-align: left;
+}
+.tile.-white {
+  background-color: #FFFFFF;
+}
+.tile.-blue {
+    background-color: #61C1C9;
+}
+.tile.-orange {
+    background-color: #BDCD31;
+}
+.tile.-green {
+    background-color: #FECB0D;
+}
+.tile.-span-1 {
+  width: 100%;
+}
+.tile.-span-1-4 {
+  width: 25%;
+}
+
+.tile .tile-title {
+  font-weight: bold;
+  font-size: 120%;
+  text-align: center;
+  margin-bottom: 0.5em;
+  xborder-bottom: silver 1px solid;
+}
+.tile .-content {
+  xpadding: 10px;
+  xborder:1px red solid;
+}
+.tile.main {
+}
+.tile ul {
+   font-size: 100%;
+    xposition: relative;
+    xleft: 1.5em;
+    xlist-style: outside none none;
+    padding: 10px;
+    line-height: 2.5em;
+    width: 100%;
+}
+.tile ul li {
+  line-height: 1.5em;
+}
+.tile li:xbefore {
+    xcontent: "▶";
+    xcolor: #3576BE;
+    xposition: absolute;
+    xleft: -1.5em;
+}
+.tile.-clickable {
+    cursor: pointer;
+    }
+.tile.-clickable:hover {
+    border: 2px silver solid;
+}
+.tile .front {
+  display: block;
+  cursor: pointer;
+}
+.tile .back {
+  display: none;
+  cursor: pointer;
+}
+
+.ktile {
+    display: inline-block;
+}
