@@ -18,7 +18,7 @@ wp_register_script('requirejs', get_template_directory_uri() . '/js/require.js',
 wp_register_script('kb-utils', get_template_directory_uri() . '/js/src/kbaseUtils.js', [], false, false);
 wp_register_script('bs-extra', get_template_directory_uri() . '/js/bs-extra.js', [], false, true);
 
-wp_register_style('home', get_template_directory_uri() . '/css/home-page-new.css');
+wp_register_style('home-page-2016', get_template_directory_uri() . '/css/home-page-2016.css');
 wp_register_style('tile', get_template_directory_uri() . '/css/tile.css', 'all');
 wp_register_style('grid', get_template_directory_uri() . '/css/grid.css', 'all');
 wp_register_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
