@@ -53,7 +53,7 @@ light gray background:
 }
 
 .highlights {
-    background-color: rgb(244, 198, 48);
+    background-color: rgb(28, 82, 127);
     padding: 12px;
 }
 .highlights .-highlight {
@@ -81,6 +81,17 @@ light gray background:
 .highlights .-highlight img {
     width: 100px;
     height: 100px;
+}
+.highlights a {
+    color: rgb(146, 186, 219);
+}
+.highlights a:link,
+.highlights a:visited {
+    color: rgb(146, 186, 219);
+}
+.highlights a:hover, highlights a:active {
+    text-decoration: underline;
+    color: rgb(170, 217, 255);
 }
 
 .home-page-sitemap {
@@ -132,6 +143,11 @@ light gray background:
     width: 100%;
     max-width: 320px;
     display: block;
+}
+
+.home-page-narrative-the-video {
+    background-color: #EEE;
+    padding: 10px 0 10px 0;
 }
 
 .home-page-the-rest {
