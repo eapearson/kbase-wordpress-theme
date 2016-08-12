@@ -52,16 +52,20 @@ light gray background:
     flex: 1;
 }
 
+
 .highlights {
-    background-color: rgb(28, 82, 127);
-    padding: 12px;
+    display: flex;
+    margin-bottom: 20px;
 }
 .highlights .-highlight {
-    border-right: 1px white solid;
+    background-color: rgb(28, 82, 127);
+    padding: 16px;
     color: white; 
+    margin-right: 20px;
+    flex: 2;
 }
 .highlights .-highlight:last-child {
-    border-right: 0;
+    margin-right: 0;
 }
 .highlights .-highlight .-row {
     display: flex;
@@ -94,6 +98,7 @@ light gray background:
     color: rgb(170, 217, 255);
 }
 
+
 .home-page-sitemap {
     
 }
@@ -105,7 +110,7 @@ light gray background:
 } 
 .home-page-sitemap .-header {
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 40px;
     color: black;
 }
 .home-page-sitemap .-header:nth-child(1) {
